@@ -26,10 +26,17 @@ public class Atividade1 {
             eSoma = eA;
         } while (fibonacci.size() < 10);
 
+        System.out.println(fibonacci);
         if (fibonacci.contains(numEscolhido)){
             System.out.println("O valor " + numEscolhido + " é um valor de Fibonacci.\n");
         } else {System.out.println("O valor " + numEscolhido + " não é um valor de Fibonacci.\n");
         }
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "fibonacci=" + fibonacci +
+                '}';
+    }
 }

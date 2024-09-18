@@ -1,8 +1,9 @@
 package Atividades;
 
+import java.util.ArrayList;
+
 public class Atividade4 {
     public void calcular(){
-        int[] aLista = {};
         for (int a = 1; a < 10; a += 2) {
             System.out.print(a + ", ");
         } System.out.println("\n");

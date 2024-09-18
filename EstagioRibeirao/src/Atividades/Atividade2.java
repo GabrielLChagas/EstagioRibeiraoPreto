@@ -8,7 +8,14 @@ public class Atividade2 {
     String palavra = entrada.nextLine();
 
     public void buscar(){
-        int i = palavra.indexOf("a");
-        System.out.println(i);
+        int total = 0;
+        for (int i = 0; i < palavra.length(); i++){
+            String casa = Character.toString(palavra.charAt(i));
+            if (casa.equals("a")) total++;
+        }
+
+        if (total > 0){
+            System.out.println("Tem "+ total + " de letras \"a\"'s nesta palavra\n");
+        } else System.out.println("Não há letras \"a\"'s nesta palavra\n");
     }
 }
